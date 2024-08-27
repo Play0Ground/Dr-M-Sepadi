@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TUT Environmental Health Research Outputs</title>
+    <title>Dr. Mercy M Sepadi</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* Keep all existing styles */
@@ -46,8 +46,10 @@ header {
 }
 
 .logo {
-    max-width: 100px;
-    height: auto;
+    width: 100px; /* Ensure the width and height are equal */
+    height: 100px;
+    border-radius: 50%; /* Make it perfectly round */
+    object-fit: cover; /* Ensure the image scales properly without distortion */
 }
 
 nav {
@@ -213,11 +215,156 @@ h2 {
     }
 }
         /* Add this new style */
-        .hidden {
+.hidden {
             display: none;
-        }
+    }
 
-        /* Hamburger menu styles */
+/* General Styles */
+.about-dr-sepadi {
+    padding: 120px;    
+    max-height: 160vh; /* Adjust based on your layout */
+    overflow-y: auto; /* Enables vertical scrolling */
+}
+
+.about-dr-sepadi h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 10vh;
+}
+
+.about-dr-sepadi p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.contact-box {
+    margin: center;
+    background-color: #42457d5a;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #a1afbf;
+    max-width: 50%;
+}
+
+.contact-box h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.contact-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-box li {
+    margin-bottom: 0.5rem;
+}
+
+.contact-box button {
+    display: flex;
+    align-items: center;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+}
+
+.contact-box button i {
+    margin-right: 0.5rem;
+}
+
+.contact-box button:hover {
+    background-color: #0056b3;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .contact-box {
+        max-width: 60%; /* Adjust for slightly smaller screens */
+    }
+}
+
+@media (max-width: 992px) {
+    .about-dr-sepadi {
+        padding: 80px; /* Reduce padding on medium screens */
+    }
+    
+    .contact-box {
+        max-width: 70%; /* Adjust for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .about-dr-sepadi {
+        padding: 60px; /* Further reduce padding for smaller screens */
+    }
+
+    .contact-box {
+        max-width: 90%; /* Increase width on smaller screens */
+    }
+
+    .contact-box h3 {
+        font-size: 1.25rem; /* Adjust font size for smaller screens */
+    }
+
+    .contact-box button {
+        font-size: 0.9rem; /* Slightly smaller font size for buttons */
+    }
+}
+
+@media (max-width: 576px) {
+    .about-dr-sepadi {
+        padding: 10px; /* Reduce padding on very small screens */
+        margin-top: 50px;
+    }
+    .about-dr-sepadi h2 {
+    
+    margin-top: 10vh;
+}
+
+    .contact-box {
+        max-width: 100%; /* Full width for very small screens */
+    }
+
+    .contact-box h3 {
+        font-size: 1.1rem; /* Adjust font size further */
+    }
+
+    .contact-box button {
+        font-size: 0.8rem; /* Adjust button font size for very small screens */
+    }
+}
+
+@media (max-width: 380px) {
+    .about-dr-sepadi {
+        padding: auto; /* Reduce padding on very small screens */
+        margin-top: 50px;
+    }
+    #dr-mercy-text {
+    margin-left: 5%;
+    
+}
+    .contact-box {
+        max-width: 100%; /* Full width for very small screens */
+    }
+
+    .contact-box h3 {
+        font-size: 1.1rem; /* Adjust font size further */
+    }
+
+    .contact-box button {
+        font-size: 0.8rem; /* Adjust button font size for very small screens */
+    }
+}
+
+
+/* Hamburger menu styles */
 .hamburger {
     display: none;
     flex-direction: column;
@@ -275,14 +422,156 @@ h2 {
     }
 }
 
-    </style>
+#dr-mercy-text {
+    font-size: 24px; /* Adjust font size */
+    font-weight: bold; /* You can make it bold if needed */
+    color: #f1f1f1; /* Change the text color */
+    animation: fadeIn 2s ease-in-out; /* Add animation */
+}
+
+/* Example of a fadeIn animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+body{
+display: flex;
+    justify-content: center; /* Horizontally centers the contact box */
+    align-items: center;     /* Vertically centers the contact box */
+    min-height: 100vh;       /* Ensures the container takes the full height of the viewport */
+    margin: 0;               /* Removes default body margin */
+}
+
+
+
+
+
+    .container {
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+  
+    .contact-box {
+        
+        padding: 15px;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+    button {
+        background-color: #4CAF50;
+        border: none;
+        color: rgb(2, 2, 2);
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+    button:hover {
+        background-color: #45a049;
+    }
+    .article-links {
+        margin-top: 20px;
+    }
+
+/* Add this to your CSS */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.designer-info p {
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.button {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+#closePopup {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .popup-content {
+        width: 90%;
+        margin: 10% auto;
+    }
+}
+</style>
 </head>
 <body>
     <div class="particles" id="particles"></div>
 
     <header>
         <nav class="container">
-            <img src="https://upload.wikimedia.org/wikipedia/en/4/49/Tshwane_University_of_Technology_logo.svg" alt="Tshwane University of Technology Logo" class="logo">
+            <img src="https://i.ibb.co/mDYn0Ly/LUOqj-Iyi-400x400.jpg" alt="LUOqj-Iyi-400x400" class="logo"> 
+            <h3 id="dr-mercy-text">Dr Mercy M Sepadi</h3>
             <div class="hamburger">
                 <span></span>
                 <span></span>
@@ -290,87 +579,52 @@ h2 {
             </div>
             <ul>
                 <li><a href="#" onclick="showSection('home')">Home</a></li>
-                <li><a href="#" onclick="showSection('wash')">WASH (Water, Sanitation and Hygiene)</a></li>
                 <li><a href="#" onclick="showSection('waste')">Waste Management</a></li>
                 <li><a href="#" onclick="showSection('occupational')">Occupational Health</a></li>
                 <li><a href="#" onclick="showSection('air')">Air Pollution</a></li>
-                <li><a href="#" onclick="showSection('food')">Food Safety</a></li>
+                
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="home" class="hero">
-            <h1>TUT Environmental Health Research Outputs</h1>
-            <h2>2019-2023</h2>
-        </section>
-
-        <section id="wash" class="section hidden">
+        <section id="home" class="about-dr-sepadi">
             <div class="container">
-                <h2 class="section-title">Water, Sanitation and Hygiene (WASH)</h2>
-                <!-- WASH content -->
-                <div class="card">
-                    <h3 class="card-title">Current Effects of Cyanobacteria Toxin in Water Sources and Containers in the Hartbeespoort Dam Area, South Africa</h3>
-                    <p class="card-description">
-                        Authors: Mokoena, M.M. and Mukhola, M.S., 2019
-                    </p>
-                    <a href="https://doi.org/10.3390%2Fijerph16224468" class="btn" target="_blank">Read Full Paper</a>
+                <h2>ABOUT DR. MERCY SEPADI</h2>
+                <p>Dr. Mercy Sepadi is the first PhD graduate in Public Health at the University of Johannesburg. She became the youngest Environmental Health Practitioner with a PhD in South Africa when she was conferred the degree on the 4th of April 2024 by the University of Johannesburg. Currently, she is a lecturer in the Department of Environmental Health at Tshwane University of Technology.</p>
+                <p>Dr Sepadi holds a National Diploma, a BTech in Environmental Health, a Master's, and a PhD in Public Health, all from the prestigious University of Johannesburg. She is a published author in international journals and an academic who supervises and mentors students from the honors to PhD levels. Dr. Sepadi's scholarly journey is marked by her relentless pursuit of knowledge and solutions in occupational health. Her research has unveiled the severe respiratory risks of informal miners and street vendors, a sector that had previously received little attention.</p>
+                <p>With 12 years of experience, Dr. Sepadi has worked in the private and public sectors. In 2021, she was promoted from Environmental Health Practitioner to Operations Manager at the City of Johannesburg before joining Tshwane University of Technology. In 2022, she was recognized as one of the Mail & Guardian's Top 200 Young South African Leaders, a significant honour and milestone in her career. Her research highlights include presentations at various international conferences and invitations from several media houses.</p>
+                <p>Dr. Sepadi believes that no one achieves greatness in isolation, success is a product of a supportive community. She emphasizes the importance of building a support network that serves as a sounding board and cheering squad.</p>
+                <div class="article-links">
+                    <h3>Dr Sepadi profiling articles</h3>
+                    <button onclick="window.open('https://www.pawh.org/a-testament-to-growth-and-mentorship/', '_blank')">PAWH's Testament to Growth and Mentorship (2024)</button>
+                    <button onclick="window.open('https://200youngsouthafricans.co.za/mercy-sepadi-29-2022/', '_blank')">Mail and Guardian Top 200 Young South African Leaders (2022)</button>
+                    <button onclick="window.open('https://www.youtube.com/watch?v=VbJkilxl8o4', '_blank')">UJ FM Interview (2022)</button>
+                    <button onclick="window.open('https://www.joburg.org.za/media_/Newsroom/Pages/2022%20News%20Articles/August/City-of-Joburg%E2%80%99s-Sepadi-an-architect-of-women%E2%80%99s-empowerment.aspx', '_blank')">City of Johannesburg Women's Month Article (2022)</button>
+                    <button onclick="window.open('https://www.discountmags.ca/magazine/star-south-africa-august-5-2022-digital/in-this-issue/40?srsltid=AfmBOopn9LjGOb9ezMeEu2Qe0G_I5hKTTuWgrGiGx65DatQQWV4xkQAe', '_blank')">The Star News Paper - "Architect of women leadership" (2022)</button>
+                    <button onclick="window.open('http://www.pawh.org/magazine/stories/', '_blank')">Pan African Women in Health Profile (2020)</button>
+                </div>
+                <div class="contact-box">
+                    <h3>Contact Details:</h3>
+                    <ul>
+                        <li><button onclick="window.location.href='tel:0123825196'"><i class="fa-solid fa-phone"></i> Business: 012 382 5196</button></li>
+                        <li><button onclick="window.location.href='tel:0732445137'"><i class="fa-solid fa-phone"></i> Other: 073 244 5137</button></li>
+                        <li><button onclick="window.location.href='mailto:SepadiMM@tut.ac.za'"><i class="fa-solid fa-envelope"></i> Email: SepadiMM@tut.ac.za</button></li>
+                        <li><button onclick="window.open('https://orcid.org/0000-0002-7236-9160', '_blank')"><i class="fa-solid fa-link"></i> ORCID</button></li>
+                    </ul>
                 </div>
         
-                <div class="card">
-                    <h3 class="card-title">The Use of Sodium Hypochlorite at Point-of-Use to Remove Microcystins from Water Containers</h3>
-                    <p class="card-description">
-                        Authors: Mokoena, M.M., Mudau, L.S., Mokgobu, M.I. and Mukhola, M.S., 2021
-                    </p>
-                    <a href="https://doi.org/10.3390/toxins13030207" class="btn" target="_blank">Read Full Paper</a>
-                </div>
-        
-                <div class="card">
-                    <h3 class="card-title">A Systematic Review on Pesticide Residue Contamination of Groundwater Coupled with Human Health Risk Assessment in Africa</h3>
-                    <p class="card-description">
-                        Authors: Makamure, S., Mudau, L., Morodi, T.J., & Mokoena, M.M., 2023
-                    </p>
-                    <a href="https://journals.aua.ke/ajhes/article/view/453" class="btn" target="_blank">Read Full Paper</a>
-                </div>
-        
-                <div class="card">
-                    <h3 class="card-title">Microcystins in Water Containers Used in the Home: A Review of Their Potential Health Effects</h3>
-                    <p class="card-description">
-                        Authors: Mokoena, M.M., 2023
-                    </p>
-                    <a href="https://doi.org/10.1016/j.ecoenv.2023.115787" class="btn" target="_blank">Read Full Paper</a>
-                </div>
-        
-                <div class="card">
-                    <h3 class="card-title">A Regulatory Framework for Bottled Water Quality Monitoring: A Case of Emfuleni Local Municipality</h3>
-                    <p class="card-description">
-                        Authors: Masilela J.N, Mokgobu M.I, Mudau L.S., 2024
-                    </p>
-                    <a href="https://doi.org/10.1016/j.heliyon.2024.e31543" class="btn" target="_blank">Read Full Paper</a>
-                </div>
+                
             </div>
         </section>
         
+    
 
         <section id="waste" class="section hidden">
             <div class="container">
                 <h2 class="section-title">Waste Management</h2>
                 <!-- Waste Management content -->
-                <div class="card">
-                    <h3 class="card-title">Influence of cultural practices on food waste in South Africa—a review</h3>
-                    <p class="card-description">
-                        Authors: Phasha, L., Molelekwa, G.F., Mokgobu, M.I. et al., 2020
-                    </p>
-                    <a href="https://doi.org/10.1186/s42779-020-00066-0" class="btn" target="_blank">Read Full Paper</a>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">Status of health care waste management plans and practices in public health care facilities in Gauteng Province, South Africa</h3>
-                    <p class="card-description">
-                        Authors: Ramodipa, T., Engelbrecht, K., Mokgobu, I. and Mmereki, D., 2023
-                    </p>
-                    <a href="https://doi.org/10.1186/s12889-023-15133-9" class="btn" target="_blank">Read Full Paper</a>
-                </div>
-                <div class="card">
+               <div class="card">
                     <h3 class="card-title">Unsafe management of soiled nappies in informal settlements and villages of South Africa</h3>
                     <p class="card-description">
                         Author: Sepadi, M.M., 2021
@@ -386,90 +640,6 @@ h2 {
             <div class="container">
                 <h2 class="section-title">Occupational Health and Safety</h2>
                 <!-- Occupational Health content -->
-                <div class="card">
-                    <h3 class="card-title">Occupational Health Hazards: Employer, Employee, and Labour Union Concerns</h3>
-                    <p class="card-description">
-                        Authors: Rikhotso, O., Morodi, T.J. and Masekameni, D.M., 2021. International Journal of Environmental Research and Public Health, 18(10), p.5423.
-                    </p>
-                    <a href="#" class="btn" target="_blank">Read Full Paper</a>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">A case for a national regulatory directive on hearing protection device labelling for South African industry: a case study</h3>
-                    <p class="card-description">
-                        Authors: Rikhotso, O., Engelbrecht, J.C. and Harmse, J.L., 2021. Occupational Health Southern Africa, 27(4), pp.118-127.
-                    </p>
-                    <a href="#" class="btn" target="_blank">Read Full Paper</a>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">Noise sources and control, and exposure groups in chemical manufacturing plants</h3>
-                    <p class="card-description">
-                        Authors: Rikhotso, O.; Harmse, J.L.; Engelbrecht, J.C., 2019. Applied Sciences, 9: 3523.
-                    </p>
-                    <a href="#" class="btn" target="_blank">Read Full Paper</a>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">Process Operators’ knowledge levels about noise: effectiveness of a noise training programme at a chemical manufacturing company</h3>
-                    <p class="card-description">
-                        Authors: Rikhotso, O., Harmse, J.L., and Engelbrecht, J.C., 2019. Occupational Health Southern Africa, 25(6): 3–10.
-                    </p>
-                    <a href="#" class="btn" target="_blank">Read Full Paper</a>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">Occupational health and safety statistics as an indicator of worker physical health in South African industry</h3>
-                    <p class="card-description">
-                        Authors: Rikhotso, O., Morodi, T.J.; Masekameni, D.M., 2022. International Journal of Environmental Research and Public Health, 18, 5423.
-                    </p>
-                    <a href="#" class="btn" target="_blank">Read Full Paper</a>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">Health risk management cost items imposed by occupational health and safety regulations: A South African perspective</h3>
-                    <p class="card-description">
-                        Authors: Rikhotso, O., Morodi, T.J.; Masekameni, D.M., 2022. Safety Science, 150, 105707.
-                    </p>
-                    <a href="#" class="btn" target="_blank">Read Full Paper</a>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">Noise exposure abatement: a perspective from industry occupational health risk assessment reports</h3>
-                    <p class="card-description">
-                        Authors: Rikhotso, O., Morodi, T.J.; Masekameni, D.M., 2022. [Journal details missing].
-                    </p>
-                    <a href="#" class="btn" target="_blank">Read Full Paper</a>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">Hearing conservation programme costs at selected South African companies</h3>
-                    <p class="card-description">
-                        Authors: Rikhotso, O., Morodi, T.J.; Masekameni, D.M., 2023.
-                    </p>
-                    <a href="https://doi.org/10.1093/annweh/wxaz097" class="btn" target="_blank">Read Full Paper</a>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">An evaluation of occupational health risk assessment methodologies from South African enterprises: noise risk assessment field study</h3>
-                    <p class="card-description">
-                        Authors: Rikhotso, O., TJ Morodi, T.J. & DM Masekameni, 2023. Occupational Health Southern Africa, 29(2), 65-74.
-                    </p>
-                    <a href="#" class="btn" target="_blank">Read Full Paper</a>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">Hearing conservation programme costs at selected South African companies</h3>
-                    <p class="card-description">
-                        Authors: Rikhotso, O., TJ Morodi, T.J. & DM Masekameni, 2023. Annals of Work Exposure and Health, 67, 448 – 462.
-                    </p>
-                    <a href="https://doi.org/10.1093/annweh/wxaz097" class="btn" target="_blank">Read Full Paper</a>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">Noise risk assessment practices of four South African manufacturing and utilities companies</h3>
-                    <p class="card-description">
-                        Authors: Rikhotso, O., Morodi, T.J. & Masekameni, D.M., 2023. Health SA Gesondheid, 28, a2457.
-                    </p>
-                    <a href="https://doi.org/10.4102/hsag.v28i0.2457" class="btn" target="_blank">Read Full Paper</a>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">Noise risk assessments within the adequately controlled and reasonably practicable philosophies</h3>
-                    <p class="card-description">
-                        Authors: Rikhotso, O., Morodi, T.J. & Masekameni, D.M., 2023. South African Journal of Communication Disorders, 70(1), 996.
-                    </p>
-                    <a href="https://doi.org/10.4102/sajcd.v70i1.996" class="btn" target="_blank">Read Full Paper</a>
-                </div>
                 <div class="card">
                     <h3 class="card-title">A Study Protocol to Assess the Respiratory Health Risks and Impacts amongst Informal Street Food Vendors in the Inner City of Johannesburg, South Africa</h3>
                     <p class="card-description">
@@ -507,13 +677,16 @@ h2 {
                 </div>
                 <div class="card">
                     <h3 class="card-title">Strengthening Urban Informal Trading and Improving the Health of Vendors: An Integrated Management Model</h3> 
-                    <p class="card-description"> Authors: Sepadi, M.M. and Nkosi, V., 2023. </p> 
+                    <p class="card-description"> 
+                        Authors: Sepadi, M.M. and Nkosi, V., 2023. </p> 
                     <a href="https://doi.org/10.3390/ijerph20064836" class="btn" target="_blank">Read Full Paper</a> 
                 </div> <div class="card"> <h3 class="card-title">The recommendations for the implementation of the healthy workplace management model of the informal vendors</h3> 
-                    <p class="card-description"> Authors: Sepadi, M.M. and Nkosi, V., 2023. </p> 
+                    <p class="card-description"> 
+                        Authors: Sepadi, M.M. and Nkosi, V., 2023. </p> 
                     <a href="https://doi.org/10.11604/pamj-oh.2023.11.11.39873" class="btn" target="_blank">Read Full Paper</a> 
                 </div> <div class="card"> <h3 class="card-title">Street Trading Uncovered: A Comprehensive Evaluation of Occupational Risk and Management Strategies in the South African Urban Marketplace</h3> 
-                    <p class="card-description"> Authors: Sepadi, M.M. and Phama, L.C., 2024. </p> 
+                    <p class="card-description"> 
+                        Authors: Sepadi, M.M. and Phama, L.C., 2024. </p> 
                     <a href="https://www.intechopen.com/online-first/1179651" class="btn" target="_blank">Read Full Paper</a> 
                 </div> <!-- Add more Occupational Health cards here --> 
 
@@ -526,35 +699,7 @@ h2 {
             <div class="container">
                 <h2 class="section-title">Air Pollution</h2>
                 <!-- Air Pollution content -->
-                <div class="card">
-                    <h3 class="card-title">Concentration levels and carcinogenic and mutagenic risks of PM 2.5-bound polycyclic aromatic hydrocarbons in an urban–industrial area in South Africa</h3>
-                    <p class="card-description">
-                        Authors: Morakinyo, O.M., Mukhola, M.S. and Mokgobu, M.I., 2020. Environmental Geochemistry and Health, 42, pp.2163-2178.
-                    </p>
-                    <a href="https://doi.org/10.1007/s10653-019-00493-2" class="btn" target="_blank">Read Full Paper</a>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">Ambient gaseous pollutants in an urban area in South Africa: Levels and potential human health risk</h3>
-                    <p class="card-description">
-                        Authors: Morakinyo, O.M., Mukhola, M.S. and Mokgobu, M.I., 2020. Atmosphere, 11(7), p.751.
-                    </p>
-                    <a href="https://doi.org/10.3390/atmos11070751" class="btn" target="_blank">Read Full Paper</a>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">Health risk analysis of elemental components of an industrially emitted respirable particulate matter in an urban area</h3>
-                    <p class="card-description">
-                        Authors: Morakinyo, O.M., Mukhola, M.S. and Mokgobu, M.I., 2021. International Journal of Environmental Research and Public Health, 18(7), p.3653.
-                    </p>
-                    <a href="https://doi.org/10.3390/ijerph18073653" class="btn" target="_blank">Read Full Paper</a>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">Indoor Household Exposures and Associated Morbidity and Mortality Outcomes in Children and Adults in South Africa</h3>
-                    <p class="card-description">
-                        Authors: Morakinyo, O.M. and Mokgobu, M.I., 2022. International Journal of Environmental Research and Public Health, 19(15), p.9471.
-                    </p>
-                    <a href="https://doi.org/10.3390/ijerph19159471" class="btn" target="_blank">Read Full Paper</a>
-                </div>
-                <div class="card">
+                                <div class="card">
                     <h3 class="card-title">Personal PM2.5 exposure monitoring of informal cooking vendors at indoor and outdoor markets in Johannesburg, South Africa</h3>
                     <p class="card-description">
                         Authors: Sepadi, M.M. and Nkosi, V., 2023.
@@ -572,98 +717,9 @@ h2 {
             </div>
         </section>
         
-        <section id="food" class="section hidden">
-            <div class="container">
-                <h2 class="section-title">Food Safety and Meat Hygiene</h2>
-                <!-- Food Safety content -->
-                <div class="card">
-                    <h3 class="card-title">Ineffectiveness of meat inspection in the detection of Taenia solium cysticerci in pigs slaughtered at two abattoirs in the Eastern Cape Province of South Africa</h3>
-                    <p class="card-description">
-                        Authors: Sithole, M.I., Bekker, J.L., Tsotetsi-Khambule, A.M. and Mukaratirwa, S., 2019. Veterinary Parasitology: Regional Studies and Reports, 17, p.100299.
-                    </p>
-                    <a href="https://doi.org/10.1016/j.vprsr.2019.100299" class="btn" target="_blank">Read Full Paper</a>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">Consumer knowledge and practices to pork safety in two Taenia solium cysticercosis endemic districts in Eastern Cape Province of South Africa</h3>
-                    <p class="card-description">
-                        Authors: Sithole, M.I., Bekker, J.L. and Mukaratirwa, S., 2020. BMC Infectious Diseases, 20(1), pp.1-8.
-                    </p>
-                    <a href="https://doi.org/10.1186/s12879-020-4839-9" class="btn" target="_blank">Read Full Paper</a>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">Impact of communal cattle farming practices on meat safety in central Bushbuckridge, South Africa</h3>
-                    <p class="card-description">
-                        Authors: Nkosi, D.V., Bekker, J.L. and Hoffman, L.C., 2020. International Journal of Veterinary Science, 9(1): 90-96.
-                    </p>
-                    <a href="https://www.ijvets.com/pdf-files/Volume-9-no-1-2020/90-96.pdf" class="btn" target="_blank">Read Full Paper</a>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">The Use of Organic Acids (Lactic and Acetic) as a Microbial Decontaminant during the Slaughter of Meat Animal Species: A Review</h3>
-                    <p class="card-description">
-                        Authors: Nkosi, D.V., Bekker, J.L. and Hoffman, L.C., 2021. Foods, 10(10), p.2293.
-                    </p>
-                    <a href="https://doi.org/10.3390/foods10102293" class="btn" target="_blank">Read Full Paper</a>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">Factors affecting the registration of slaughter facilities as formal abattoirs in South Africa</h3>
-                    <p class="card-description">
-                        Authors: Nkosi, D.V., Bekker, J.L. and Hoffman, L.C., 2021. Journal of Consumer Protection and Food Safety, 16(3), pp.195-203.
-                    </p>
-                    <a href="http://dx.doi.org/10.1007/s00003-021-01337-x" class="btn" target="_blank">Read Full Paper</a>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">Toxic Metals in Wild Ungulates and Domestic Meat Animals Slaughtered for Food Purposes: A Systemic Review</h3>
-                    <p class="card-description">
-                        Authors: Nkosi, D.V., Bekker, J.L. and Hoffman, L.C., 2021. Foods, 10, 2853.
-                    </p>
-                    <a href="https://doi.org/10.3390/foods10112853" class="btn" target="_blank">Read Full Paper</a>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">Physical Hazards in Aepyceros melampus Carcasses Killed for Meat Purposes by Aerial and Thoracic Shots</h3>
-                    <p class="card-description">
-                        Authors: Nkosi, D.V., Bekker, J.L. and Hoffman, L.C., 2022. Applied Science MDPI, 10, 2853.
-                    </p>
-                    <a href="https://doi.org/10.3390/app12146861" class="btn" target="_blank">Read Full Paper</a>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">Physical Hazards in Wild Ungulate Meat Harvested for Food Purposes: A Systematic Review</h3>
-                    <p class="card-description">
-                        Authors: Nkosi, D.V., Bekker, J.L. and Hoffman, L.C., 2023. International Journal of Veterinary Science, 12(3): 272-283.
-                    </p>
-                    <a href="https://www.ijvets.com/pdf-files/Volume-12-no-3-2023/272-283.pdf" class="btn" target="_blank">Read Full Paper</a>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">Sodium in Processed Meats Produced by Local Butcheries in Tshwane, South Africa</h3>
-                    <p class="card-description">
-                        Authors: Mkhwebane, E.J., Bekker, J.L. and Mokgalaka-Fleischmann, N.S., 2022. African Journal of Food, Agriculture, Nutrition & Development, 22(8).
-                    </p>
-                    <a href="https://www.ajfand.net/Volume22/No8/Mkhwebane22235.pdf" class="btn" target="_blank">Read Full Paper</a>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">The Influence of Potable Water, Lactic and Acetic Acids on the Microbiology of Wound Areas on Impala (Aepyceros melampus) Carcasses</h3>
-                    <p class="card-description">
-                        Authors: Nkosi, D.V., Bekker, J.L., Gouws, P.A. and Hoffman, L.C., 2022. Microbiology Research, 13(4), pp.740-752.
-                    </p>
-                    <a href="https://doi.org/10.3390/microbiolres13040053" class="btn" target="_blank">Read Full Paper</a>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">Consumer Knowledge and Understanding of Food Labelling Information In Klipgat Region, Of South Africa</h3>
-                    <p class="card-description">
-                        Authors: Mahlangu, E., Bekker, J.L. and Nkosi, D.V., 2024. African Journal of Food, Agriculture, Nutrition and Development, 24(1), 25578-25602.
-                    </p>
-                    <a href="https://ajfand.net/Volume24/No2/Mahlangu23870.pdf" class="btn" target="_blank">Read Full Paper</a>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">The need of maximizing food control in the South African Meat Processors Association (SAMPA)</h3>
-                    <p class="card-description">
-                        Authors: Nkosi, D.V. and Bekker, J.L., 2023.
-                    </p>
-                    <a href="https://ajfand.net/Volume24/No4/Nkosi23565.pdf" class="btn" target="_blank">Read Full Paper</a>
-                </div>
-                <!-- Add more Food Safety cards here -->
-            </div>
-        </section>
         
+        
+ 
 
     </main>
 
@@ -705,7 +761,7 @@ h2 {
             particlesContainer.appendChild(particle);
         }
 
-         // Hamburger menu functionality
+        // Hamburger menu functionality
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('nav ul');
 
@@ -713,8 +769,23 @@ hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
     navMenu.classList.toggle('active');
 });
-    </script>
-   
+
+// Close menu when a link is clicked
+document.querySelectorAll('nav ul li a').forEach(link => {
+    link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+    });
+});
+
+function showSection(id) {
+    document.querySelectorAll('section').forEach(section => {
+        section.classList.add('hidden');
+    });
+    document.getElementById(id).classList.remove('hidden');
+}
+</script>
+
 </script>
 
 
